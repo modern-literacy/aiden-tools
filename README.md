@@ -1,24 +1,8 @@
-# aiden-tools
+# aiden-tools (Archived)
 
-Python tooling for the AIDEN system.
+This repository is no longer part of the public AIDEN shape.
 
-These tools operate on engine outputs and pinned policy artifacts so reviewers can batch-run proposals, assemble review packs, and seed demo-safe precedent data.
+- Public runtime and policy package live in [`aiden-engine`](https://github.com/modern-literacy/aiden-engine)
+- Public walkthrough lives in [`aiden-demo`](https://github.com/modern-literacy/aiden-demo)
 
-## Tools
-- `eval_harness.py` — batch evaluation harness
-- `review_pack_generator.py` — assembles review packs from engine output and publication views
-- `seed_precedents.py` — seeds synthetic precedent history for demo and evaluation scenarios
-
-## Inputs it expects
-- deterministic review data
-- gate decision output
-- bounded assistive traces when available
-- publication views (TEVB implementation, FPF-aligned)
-
-## Setup
-```bash
-pip install -r requirements.txt
-```
-
-## Testing
-`test_harness.py` and `pytest` validate the canonical sample inputs and outputs.
+Batch evaluation, review-pack generation, and precedent seeding are retained here only as historical support tooling and should not be treated as active public product surfaces.
